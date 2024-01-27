@@ -1,0 +1,17 @@
+D:\DotNet\lastestEFCTestApp\DotNetWebApp\DataBaseAccessLayer\bin\Debug\net8.0\DataBaseAccessLayer.deps.json
+D:\DotNet\lastestEFCTestApp\DotNetWebApp\DataBaseAccessLayer\bin\Debug\net8.0\DataBaseAccessLayer.runtimeconfig.json
+D:\DotNet\lastestEFCTestApp\DotNetWebApp\DataBaseAccessLayer\bin\Debug\net8.0\DataBaseAccessLayer.dll
+D:\DotNet\lastestEFCTestApp\DotNetWebApp\DataBaseAccessLayer\bin\Debug\net8.0\DataBaseAccessLayer.pdb
+D:\DotNet\lastestEFCTestApp\DotNetWebApp\DataBaseAccessLayer\bin\Debug\net8.0\Models.dll
+D:\DotNet\lastestEFCTestApp\DotNetWebApp\DataBaseAccessLayer\bin\Debug\net8.0\Models.pdb
+D:\DotNet\lastestEFCTestApp\DotNetWebApp\DataBaseAccessLayer\obj\Debug\net8.0\DataBaseAccessLayer.csproj.AssemblyReference.cache
+D:\DotNet\lastestEFCTestApp\DotNetWebApp\DataBaseAccessLayer\obj\Debug\net8.0\DataBaseAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\DotNet\lastestEFCTestApp\DotNetWebApp\DataBaseAccessLayer\obj\Debug\net8.0\DataBaseAccessLayer.AssemblyInfoInputs.cache
+D:\DotNet\lastestEFCTestApp\DotNetWebApp\DataBaseAccessLayer\obj\Debug\net8.0\DataBaseAccessLayer.AssemblyInfo.cs
+D:\DotNet\lastestEFCTestApp\DotNetWebApp\DataBaseAccessLayer\obj\Debug\net8.0\DataBaseAccessLayer.csproj.CoreCompileInputs.cache
+D:\DotNet\lastestEFCTestApp\DotNetWebApp\DataBaseAccessLayer\obj\Debug\net8.0\DataBaseAccessLayer.csproj.CopyComplete
+D:\DotNet\lastestEFCTestApp\DotNetWebApp\DataBaseAccessLayer\obj\Debug\net8.0\DataBaseAccessLayer.dll
+D:\DotNet\lastestEFCTestApp\DotNetWebApp\DataBaseAccessLayer\obj\Debug\net8.0\refint\DataBaseAccessLayer.dll
+D:\DotNet\lastestEFCTestApp\DotNetWebApp\DataBaseAccessLayer\obj\Debug\net8.0\DataBaseAccessLayer.pdb
+D:\DotNet\lastestEFCTestApp\DotNetWebApp\DataBaseAccessLayer\obj\Debug\net8.0\DataBaseAccessLayer.genruntimeconfig.cache
+D:\DotNet\lastestEFCTestApp\DotNetWebApp\DataBaseAccessLayer\obj\Debug\net8.0\ref\DataBaseAccessLayer.dll
