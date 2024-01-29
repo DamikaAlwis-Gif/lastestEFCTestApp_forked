@@ -78,7 +78,7 @@ namespace DataAccessLayer.InterFaces
             _mapper = mapperConfig.CreateMapper();
         }
 
-        public async Task<InternalCustomer> GetInternalCustomerByIdAsync(int id)
+        public async Task<InternalCustomer?> GetInternalCustomerByIdAsync(int id)
         {
             return await _context.Icustomers.FirstOrDefaultAsync(m => m.Id == id);
         }
