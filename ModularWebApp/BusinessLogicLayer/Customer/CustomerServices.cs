@@ -28,12 +28,17 @@ namespace BusinessLogicLayer.Customer
             _customerRepo.DeleteCustomerAsync(id);
         }
 
-        public async Task<InternalCustomer> GetInternalCustomerByIdAsync(int id)
+        public async Task<ReqResCustomer> GetReqResCustomerByIdAsync(int id)
+        {
+            return await _customerRepo.GetReqResCustomerByIdAsync(id);
+        }
+
+        public async Task<InternalCustomer> GetInternalCustomerByIdAsync(int id) 
         {
             return await _customerRepo.GetInternalCustomerByIdAsync(id);
         }
 
-        public async Task<IEnumerable<InternalCustomer>> GetInternalCustomersAsync()
+        public async Task<IEnumerable<ReqResCustomer>> GetInternalCustomersAsync()
         {
             return await _customerRepo.GetInternalCustomersAsync();
         }

@@ -9,7 +9,8 @@ namespace DataAccessLayer.InterFaces
 {
     public interface ICustomerRepository
     {
-        Task<IEnumerable<InternalCustomer>> GetInternalCustomersAsync();
+        Task<IEnumerable<ReqResCustomer>> GetInternalCustomersAsync();
+        Task<ReqResCustomer> GetReqResCustomerByIdAsync(int id);
         Task<InternalCustomer> GetInternalCustomerByIdAsync(int id);
         void UpdateCustomerAsync(InternalCustomer customer);
         void DeleteCustomerAsync(int id);

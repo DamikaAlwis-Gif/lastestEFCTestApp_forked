@@ -487,3 +487,4 @@ D:\DotNet\NewModularApp\ModularWebApp\PresentationLayer\obj\Debug\net8.0\refint\
 D:\DotNet\NewModularApp\ModularWebApp\PresentationLayer\obj\Debug\net8.0\PresentationLayer.pdb
 D:\DotNet\NewModularApp\ModularWebApp\PresentationLayer\obj\Debug\net8.0\PresentationLayer.genruntimeconfig.cache
 D:\DotNet\NewModularApp\ModularWebApp\PresentationLayer\obj\Debug\net8.0\ref\PresentationLayer.dll
+D:\DotNet\lastestEFCTestApp\ModularWebApp\PresentationLayer\bin\Debug\net8.0\AutoMapper.dll

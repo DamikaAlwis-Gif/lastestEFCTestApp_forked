@@ -26,7 +26,7 @@ namespace PresentationLayer.Controllers
         // GET: CustomersController/Details/5
         public async Task<ActionResult> Details(int id)
         {
-            return View(await _services.GetInternalCustomerByIdAsync(id));
+            return View(await _services.GetReqResCustomerByIdAsync(id));
         }
 
         // GET: CustomersController/Create

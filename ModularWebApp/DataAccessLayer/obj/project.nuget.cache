@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "oMgy2/ypkdy77ie6fYUGNlYdKfsbdbxgGq73VslvoaxTHxvVfpbQR3y6f/PHwcT12Sz4sdmD574MAPqJWnOjZQ==",
+  "dgSpecHash": "8us39f40KS2qqWfvY0+vLNKrE6KYxbQP0zj30Ah7QSDAPUmE66nFtijBt+1U5oMZrpB9pbkEpMGDBYnxroHBHQ==",
   "success": true,
   "projectFilePath": "D:\\DotNet\\lastestEFCTestApp\\ModularWebApp\\DataAccessLayer\\DataAccessLayer.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
@@ -11,6 +12,7 @@
     "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\microsoft.codeanalysis.csharp\\4.5.0\\microsoft.codeanalysis.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\microsoft.codeanalysis.csharp.workspaces\\4.5.0\\microsoft.codeanalysis.csharp.workspaces.4.5.0.nupkg.sha512",
     "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\microsoft.codeanalysis.workspaces.common\\4.5.0\\microsoft.codeanalysis.workspaces.common.4.5.0.nupkg.sha512",
+    "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.1\\microsoft.entityframeworkcore.8.0.1.nupkg.sha512",
     "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.1\\microsoft.entityframeworkcore.abstractions.8.0.1.nupkg.sha512",
     "C:\\Users\\NusalMuthuthanthrige\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.1\\microsoft.entityframeworkcore.analyzers.8.0.1.nupkg.sha512",

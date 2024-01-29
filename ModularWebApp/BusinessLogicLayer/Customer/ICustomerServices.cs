@@ -9,7 +9,8 @@ namespace BusinessLogicLayer.Customer
 {
     public interface ICustomerServices
     {
-        Task<IEnumerable<InternalCustomer>> GetInternalCustomersAsync();
+        Task<IEnumerable<ReqResCustomer>> GetInternalCustomersAsync();
+        Task<ReqResCustomer> GetReqResCustomerByIdAsync(int id);
         Task<InternalCustomer> GetInternalCustomerByIdAsync(int id);
         void UpdateCustomerAsync(InternalCustomer customer);
         void CreateCustomerAsync(InternalCustomer customer);

@@ -1,6 +1,7 @@
 ﻿using DataAccessLayer.DbContext;
 using DataAccessLayer.Models;
 using Microsoft.EntityFrameworkCore;
+using AutoMapper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,11 +13,14 @@ namespace DataAccessLayer.InterFaces
 {
     public class CustomerRepository : ICustomerRepository
     {
+        private MapperConfiguration mapperConfig;
+        private IMapper _mapper;
         private readonly AppDbContextICustomerPostgre _context;
 
         public CustomerRepository()
         {
             _context = new AppDbContextICustomerPostgre();
+            InitializeMapper();
         }
 
         public async void CreateCustomerAsync(InternalCustomer customer)
@@ -35,14 +39,16 @@ namespace DataAccessLayer.InterFaces
             }
         }
 
-        public async Task<InternalCustomer> GetInternalCustomerByIdAsync(int id)
+        public async Task<ReqResCustomer> GetReqResCustomerByIdAsync(int id)
         {
-            return await _context.Icustomers.FirstOrDefaultAsync(m => m.Id ==id);
+            var internalCustomer = await _context.Icustomers.FirstOrDefaultAsync(m => m.Id == id);
+            return _mapper.Map<ReqResCustomer>(internalCustomer);
         }
 
-        public async Task<IEnumerable<InternalCustomer>> GetInternalCustomersAsync()
+        public async Task<IEnumerable<ReqResCustomer>> GetInternalCustomersAsync()
         {
-            return await _context.Icustomers.ToListAsync();
+            var internalCustomer = await _context.Icustomers.ToListAsync();
+            return _mapper.Map<IEnumerable<ReqResCustomer>>(internalCustomer);
         }
 
         public void UpdateCustomerAsync(InternalCustomer customer)
@@ -62,5 +68,21 @@ namespace DataAccessLayer.InterFaces
         {
             return _context.Icustomers.Any(e => e.Id == id);
         }
+
+        private void InitializeMapper()
+        {
+           mapperConfig = new MapperConfiguration(cfg =>
+            {
+                cfg.CreateMap<InternalCustomer, ReqResCustomer>();
+            });
+            _mapper = mapperConfig.CreateMapper();
+        }
+
+        public async Task<InternalCustomer> GetInternalCustomerByIdAsync(int id)
+        {
+            return await _context.Icustomers.FirstOrDefaultAsync(m => m.Id == id);
+        }
+
+   
     }
 }

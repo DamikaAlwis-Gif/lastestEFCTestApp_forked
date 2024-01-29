@@ -1,4 +1,4 @@
-﻿@model IEnumerable<DataAccessLayer.Models.InternalCustomer>
+﻿@model IEnumerable<DataAccessLayer.Models.ReqResCustomer>
 
 @{
     ViewData["Title"] = "Index";
@@ -16,9 +16,6 @@
                 @Html.DisplayNameFor(model => model.Name)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Password)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.Age)
             </th>
             <th>
@@ -32,9 +29,6 @@
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Password)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Age)
