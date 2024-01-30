@@ -17,9 +17,9 @@ namespace DataAccessLayer.InterFaces
         private IMapper _mapper;
         private readonly AppDbContextICustomerPostgre _context;
 
-        public CustomerRepository()
+        public CustomerRepository(AppDbContextICustomerPostgre context)
         {
-            _context = new AppDbContextICustomerPostgre();
+            _context = context;
             InitializeMapper();
         }
 

@@ -1,7 +1,14 @@
+using BusinessLogicLayer.Customer;
+using DataAccessLayer.DbContext;
+using DataAccessLayer.InterFaces;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<AppDbContextICustomerPostgre>();
+builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
+builder.Services.AddScoped<ICustomerServices,CustomerServices>();
 
 var app = builder.Build();
 

@@ -9,14 +9,14 @@ namespace PresentationLayer.Controllers
     public class CustomerController : Controller
     {
         private readonly ICustomerServices _services;
-        ICustomerRepository customerRepo = new CustomerRepository();
+        
 
-        public CustomerController()
+        public CustomerController(ICustomerServices customerServices)
         {
-            _services = new CustomerServices(customerRepo);
+            _services = customerServices;
         }
         //GEt:customer/index
-       // [Route("hi/bye")]
+        //[Route("hi/bye")]
         public async Task<IActionResult> Index()
         {
             var Customers = await _services.GetInternalCustomersAsync();
