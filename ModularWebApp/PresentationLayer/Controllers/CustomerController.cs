@@ -38,7 +38,7 @@ namespace PresentationLayer.Controllers
         // POST: CustomersController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Password,Age,Address")] InternalCustomer internalCustomer)
+        public IActionResult Create([Bind("Id,Name,Password,Age,Address")] InternalCustomer internalCustomer)
         {
             if (ModelState.IsValid)
             {

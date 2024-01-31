@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddScoped<AppDbContextICustomerPostgre>();
+//builder.Services.AddScoped<AppDbContextICustomerPostgre>();
 builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
 builder.Services.AddScoped<ICustomerServices,CustomerServices>();
 

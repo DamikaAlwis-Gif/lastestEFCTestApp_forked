@@ -26,10 +26,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\DotNet\lastestEFCTestApp\ModularWebApp\PresentationLayer
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/DotNet/lastestEFCTestApp/ModularWebApp/PresentationLayer/Views/1Customer/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcMUN1c3RvbWVyXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/DotNet/lastestEFCTestApp/ModularWebApp/PresentationLayer/Views/Customer/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

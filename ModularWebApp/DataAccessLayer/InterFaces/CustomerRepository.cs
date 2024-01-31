@@ -17,9 +17,9 @@ namespace DataAccessLayer.InterFaces
         private IMapper _mapper;
         private readonly AppDbContextICustomerPostgre _context;
 
-        public CustomerRepository(AppDbContextICustomerPostgre context)
+        public CustomerRepository()
         {
-            _context = context;
+            _context = new AppDbContextICustomerPostgre();
             InitializeMapper();
         }
 
@@ -29,13 +29,13 @@ namespace DataAccessLayer.InterFaces
             await _context.SaveChangesAsync();
         }
 
-        public void DeleteCustomerAsync(int id)
+        public async void DeleteCustomerAsync(int id)
         {
             var customerToRemove = _context.Icustomers.FirstOrDefault(c => c.Id == id);
             if (customerToRemove != null)
             {
                 _context.Icustomers.Remove(customerToRemove);
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
             }
         }
 
@@ -51,9 +51,9 @@ namespace DataAccessLayer.InterFaces
             return _mapper.Map<IEnumerable<ReqResCustomer>>(internalCustomer);
         }
 
-        public void UpdateCustomerAsync(InternalCustomer customer)
+        public async void UpdateCustomerAsync(InternalCustomer customer)
         {
-            var existingCustomer = _context.Icustomers.FirstOrDefault(c => c.Id == customer.Id);
+            var existingCustomer = await _context.Icustomers.FirstOrDefaultAsync(c => c.Id == customer.Id);
             if (existingCustomer != null)
             {
                 // Update the properties of existingCustomer with data properties
@@ -61,7 +61,7 @@ namespace DataAccessLayer.InterFaces
                 existingCustomer.Age = customer.Age;
                 existingCustomer.Address = customer.Address;
 
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
             }
         }
         public bool InternalCustomerExists(int id)
