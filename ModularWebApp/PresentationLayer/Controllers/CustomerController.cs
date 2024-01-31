@@ -109,7 +109,7 @@ namespace PresentationLayer.Controllers
                 return NotFound();
             }
 
-            _services.DeleteCustomerAsync(reqResCustomer.Id);
+            //_services.DeleteCustomerAsync(reqResCustomer.Id);
             return View(reqResCustomer);
         }
 
